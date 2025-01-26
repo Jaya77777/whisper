@@ -1,3 +1,86 @@
+ffmpeg -hwaccel auto -y -i "/storage/emulated/0/FFMPEG/transcribing_1.mp3" -i "/storage/emulated/0/FFMPEG/transcribing_1.mp3" -s 1456x720 -vn -c:a libmp3lame -ab 192k -ar 44100 -f mp3 "/storage/emulated/0/FFMPEG/transcribing_2.mp3"
+
+ffmpeg version 6.0 Copyright (c) 2000-2023 the FFmpeg developers
+  built with gcc 4.9.x (GCC) 20150123 (prerelease)
+  configuration: --enable-version3 --enable-gpl --enable-nonfree --disable-indev=v4l2 --enable-libmp3lame --enable-libx264 --enable-libx265 --enable-libvpx --enable-libvorbis --enable-libtheora --enable-libopus --enable-libfdk-aac --enable-libfreetype --enable-libass --enable-libfribidi --enable-fontconfig --enable-pthreads --enable-libxvid --enable-filters --enable-openssl --enable-librtmp --disable-protocol='udp,udplite' --enable-libopencore-amrwb --enable-libopencore-amrnb --enable-libvo-amrwbenc --enable-libspeex --enable-libsoxr --enable-libwebp --enable-libxml2 --enable-libopenh264 --enable-jni --prefix=/home/silentlexx/AndroidstudioProjects/ffmpeg/ffmpeg/build/arm64-api21-r13b --sysroot=/home/silentlexx/Android/android-ndk-r13b/platforms/android-21/arch-arm64 --arch=arm64 --disable-shared --enable-static --enable-pic --enable-ffmpeg --disable-ffplay --disable-ffprobe --disable-ffnvcodec --disable-avdevice --disable-debug --disable-doc --disable-htmlpages --disable-manpages --disable-podpages --disable-txtpages --disable-symver --cross-prefix=/home/silentlexx/Android/android-ndk-r13b/toolchains/aarch64-linux-android-4.9/prebuilt/linux-x86_64/bin/aarch64-linux-android- --target-os=android --enable-cross-compile --pkg-config-flags=--static --extra-libs='-lgnustl_static -lm -lpng -l:libz.so -lpthread' --enable-asm --enable-neon --enable-libxavs2 --enable-libdav1d --enable-libaom --enable-small
+  libavutil      58.  2.100 / 58.  2.100
+  libavcodec     60.  3.100 / 60.  3.100
+  libavformat    60.  3.100 / 60.  3.100
+  libavfilter     9.  3.100 /  9.  3.100
+  libswscale      7.  1.100 /  7.  1.100
+  libswresample   4. 10.100 /  4. 10.100
+  libpostproc    57.  1.100 / 57.  1.100
+Input #0, mp3, from '/storage/emulated/0/FFMPEG/transcribing_1.mp3':
+  Metadata:
+    major_brand     : mp42
+    minor_version   : 0
+    compatible_brands: isommp42
+    com.android.version: 6.0
+    encoder         : Lavf57.41.100
+  Duration: 00:03:01.78, start: 0.023021, bitrate: 192 kb/s
+  Stream #0:0: Audio: mp3, 48000 Hz, stereo, fltp, 192 kb/s
+    Metadata:
+      encoder         : Lavc57.48
+Input #1, mp3, from '/storage/emulated/0/FFMPEG/transcribing_1.mp3':
+  Metadata:
+    major_brand     : mp42
+    minor_version   : 0
+    compatible_brands: isommp42
+    com.android.version: 6.0
+    encoder         : Lavf57.41.100
+  Duration: 00:03:01.78, start: 0.023021, bitrate: 192 kb/s
+  Stream #1:0: Audio: mp3, 48000 Hz, stereo, fltp, 192 kb/s
+    Metadata:
+      encoder         : Lavc57.48
+Stream mapping:
+  Stream #0:0 -> #0:0 (mp3 (mp3float) -> mp3 (libmp3lame))
+Press [q] to stop, [?] for help
+Output #0, mp3, to '/storage/emulated/0/FFMPEG/transcribing_2.mp3':
+  Metadata:
+    major_brand     : mp42
+    minor_version   : 0
+    compatible_brands: isommp42
+    com.android.version: 6.0
+    TSSE            : Lavf60.3.100
+  Stream #0:0: Audio: mp3, 44100 Hz, stereo, fltp, 192 kb/s
+    Metadata:
+      encoder         : Lavc60.3.100 libmp3lame
+size=       0kB time=-577014:32:22.77 bitrate=  -0.0kbits/s speed=N/A    
+size=      69kB time=00:00:02.92 bitrate= 194.1kbits/s speed=5.84x    
+size=     171kB time=00:00:07.26 bitrate= 192.9kbits/s speed=7.24x    
+size=     256kB time=00:00:11.93 bitrate= 175.7kbits/s speed=7.94x    
+size=     256kB time=00:00:16.87 bitrate= 124.3kbits/s speed=8.42x    
+size=     512kB time=00:00:22.23 bitrate= 188.7kbits/s speed=8.87x    
+size=     512kB time=00:00:27.79 bitrate= 150.9kbits/s speed=9.24x    
+size=     768kB time=00:00:33.51 bitrate= 187.7kbits/s speed=9.55x    
+size=     768kB time=00:00:39.13 bitrate= 160.8kbits/s speed=9.76x    
+size=    1024kB time=00:00:44.74 bitrate= 187.5kbits/s speed=9.92x    
+size=    1024kB time=00:00:50.36 bitrate= 166.6kbits/s speed=10.1x    
+size=    1280kB time=00:00:56.00 bitrate= 187.2kbits/s speed=10.2x    
+size=    1280kB time=00:01:01.67 bitrate= 170.0kbits/s speed=10.3x    
+size=    1536kB time=00:01:07.34 bitrate= 186.8kbits/s speed=10.3x    
+size=    1536kB time=00:01:13.09 bitrate= 172.2kbits/s speed=10.4x    
+size=    1792kB time=00:01:18.73 bitrate= 186.5kbits/s speed=10.5x    
+size=    1792kB time=00:01:24.45 bitrate= 173.8kbits/s speed=10.5x    
+size=    2048kB time=00:01:30.14 bitrate= 186.1kbits/s speed=10.6x    
+size=    2048kB time=00:01:35.76 bitrate= 175.2kbits/s speed=10.6x    
+size=    2304kB time=00:01:40.62 bitrate= 187.6kbits/s speed=10.6x    
+size=    2304kB time=00:01:45.97 bitrate= 178.1kbits/s speed=10.6x    
+size=    2560kB time=00:01:50.94 bitrate= 189.0kbits/s speed=10.5x    
+size=    2560kB time=00:01:56.45 bitrate= 180.1kbits/s speed=10.6x    
+size=    2816kB time=00:02:01.83 bitrate= 189.3kbits/s speed=10.6x    
+size=    2816kB time=00:02:07.45 bitrate= 181.0kbits/s speed=10.6x    
+size=    3072kB time=00:02:13.25 bitrate= 188.9kbits/s speed=10.6x    
+size=    3072kB time=00:02:18.99 bitrate= 181.1kbits/s speed=10.7x    
+size=    3328kB time=00:02:24.69 bitrate= 188.4kbits/s speed=10.7x    
+size=    3328kB time=00:02:30.41 bitrate= 181.3kbits/s speed=10.7x    
+size=    3584kB time=00:02:36.18 bitrate= 188.0kbits/s speed=10.7x    
+size=    3584kB time=00:02:41.75 bitrate= 181.5kbits/s speed=10.8x    
+size=    3840kB time=00:02:47.44 bitrate= 187.9kbits/s speed=10.8x    
+size=    3840kB time=00:02:53.14 bitrate= 181.7kbits/s speed=10.8x    
+size=    4096kB time=00:02:58.86 bitrate= 187.6kbits/s speed=10.8x    
+size=    4261kB time=00:03:01.73 bitrate= 192.1kbits/s speed=10.8x    
+video:0kB audio:4261kB subtitle:0kB other streams:0kB global headers:0kB muxing overhead: 0.018291%
 import argparse
 import os
 import traceback
